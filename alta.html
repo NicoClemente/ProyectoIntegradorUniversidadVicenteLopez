@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <img src="./img/Logo.png" alt="Logo" class="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="alta.html">Agregar Producto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Agregar Nuevo Producto</h1>
+        <form id="product-form" action="guardar_producto.php" method="POST">
+            <label for="nombre">Nombre del Producto:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" required>
+            
+            <label for="stock">Stock:</label>
+            <input type="number" id="stock" name="stock" required>
+            
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca">
+            
+            <!-- Agregar más campos aquí según tus necesidades -->
+            
+            <button type="submit">Guardar Producto</button>
+        </form>
+    </main>
+
+    <footer class="fixed-footer">
+        <p>Todos los derechos reservados &copy; 2023</p>
+    </footer>
+</body>
+</html>
