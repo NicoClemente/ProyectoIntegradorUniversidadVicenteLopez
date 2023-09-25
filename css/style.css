@@ -1,11 +1,15 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: "Cinzel", "Bitter", "EB Garamond";
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .container {
@@ -18,35 +22,44 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
 }
+
 .logo-title {
-    display: flex; 
-    align-items: center; 
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .Logo {
-    width: 15%;
-    margin-left: 5%;
+    width: 10%;
+
 }
 
 #title {
     margin-left: 10px;
-    font-size: 2.5em;
+    font-size: 5em;
+    color: #E37727;
+    font-family: "Cinzel", "Bitter", "EB Garamond";
 }
 
+nav {
+    background-color: black;
+    color: white;
+}
 
-nav, ul {
-    width: 80%;
+nav,
+ul {
+    width: 100%;
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px;
-    justify-content: end; 
+    justify-content: center;
 }
 
 nav ul li {
@@ -58,9 +71,10 @@ nav ul li {
 
 
 a {
-    color: white;
-    font-size: 1.5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #E37727;
+    font-size: 2rem;
+    font-family: "Cinzel", "Bitter", "EB Garamond";
+    font-weight: bold;
 }
 
 
@@ -68,10 +82,31 @@ a {
 
 h1,
 p {
-    margin: 20px 0 20px 20px;
+    margin: 0 0 0 0px;
     font-size: 1.8em;
+    color: white;
 }
-
+#Title-Alta  {
+    background-color: #314652;
+    color: rgb(243, 215, 6);
+    padding: 20px;
+    width: 30%;
+    border: 3px solid black;
+    font-family: "Cinzel", "Bitter", "EB Garamond";
+    font-weight: bold;
+    
+}
+#Title-Contacto {
+    background-color: #314652;
+    color: rgb(243, 215, 6);
+    padding: 20px;
+    width: 45%;
+    border: 3px solid black;
+    font-family: "Cinzel", "Bitter", "EB Garamond";
+    font-weight: bold;
+    
+}
+ 
 .p-nosotros {
     font-size: .8em;
 }
@@ -90,7 +125,7 @@ p {
 
 .btn-comprar {
     font-size: 1.5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Cinzel", "Bitter", "EB Garamond";
 }
 
 .btn:hover {
@@ -99,43 +134,59 @@ p {
 
 /* Formularios */
 form {
-    background-color: #fff;
+    width: 30%;
+    background-color: #314652;
+    color: rgb(243, 215, 6);
     padding: 20px;
-    border: 1px solid #e0e0e0;
+    border: 3px solid black;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #product-form {
-    margin: 20px 0 20px 0;
+    margin: 0px 0 30px 0;
+    
 }
 
 label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
-
+input {
+    margin: 0 0 30px 0;
+   
+}
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 70%;
+    width: 95%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid;
     border-radius: 3px;
 }
 
-input {
-    margin: 0 0 30px 0;
+input[type="checkbox"] {
+    transform: scale(1.5);
+    width: 30%;
 }
+
+input[type="number"] {
+    width: 15%;
+    height: 30px;
+}
+
 
 textarea {
     height: 150px;
 }
 
 button[type="submit"] {
-    background-color: #007bff;
+    background-color: #E37727;
+    width: 50%;
+    height: 50px;
+    font-size: 1.3rem;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -146,7 +197,10 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #E37727;
+    transition: all 300ms ease;
+    transform: translateY(-5px);
+    transform: scale(1.1);
 }
 
 /* Estilos para Cards */
@@ -165,12 +219,15 @@ button[type="submit"]:hover {
     justify-content: center;
     color: white;
 }
+
 .card img {
     width: 100%;
 }
+
 .btn-comprar {
     width: 50%;
 }
+
 .card-group {
     width: 100%;
     padding-top: 25px;
@@ -189,9 +246,10 @@ button[type="submit"]:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .card p {
-font-size: 1.2rem;
-font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 /* Footer */
@@ -201,21 +259,23 @@ footer {
     color: #fff;
     bottom: 0;
     text-align: center;
-    justify-content:space-around;
+    justify-content: space-around;
     padding: 20px 0;
     display: flex;
     flex-direction: row;
     flex-shrink: 0;
-    
-   
+
+
 }
+
 .footer-p {
     display: flex;
     flex-direction: column;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
 
 }
+
 iframe {
     width: 30%;
     height: 300px;
@@ -229,4 +289,26 @@ iframe {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.btn-wsp {
+    position: fixed;
+    width: 4%;
+    height: 8%;
+    line-height: 60px;
+    bottom: 6%;
+    right: 2%;
+    background: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.btn-wsp:hover {
+    transition: all 300ms ease;
+    transform: translateY(-5px);
+    transform: scale(1.1);
 }
