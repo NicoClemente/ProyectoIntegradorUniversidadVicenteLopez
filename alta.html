@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Producto</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header>
-        <img src="./img/Logo.png" alt="Logo" class="Logo">
+        <div class="logo-title">
+            <img src="./img/Logo.png" alt="Logo" class="Logo">
+            <h1 id="title">Armeria El Cazador</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -24,24 +29,50 @@
         <form id="product-form" action="guardar_producto.php" method="POST">
             <label for="nombre">Nombre del Producto:</label>
             <input type="text" id="nombre" name="nombre" required>
-            
+
             <label for="precio">Precio:</label>
             <input type="number" id="precio" name="precio" required>
-            
+
             <label for="stock">Stock:</label>
             <input type="number" id="stock" name="stock" required>
-            
+
             <label for="marca">Marca:</label>
             <input type="text" id="marca" name="marca">
-            
-            <!-- Agregar más campos aquí según tus necesidades -->
-            
+
+            <label for="categoria">Categoría:</label>
+            <input type="text" id="categoria" name="categoria">
+
+            <label for="descripcion_corta">Descripción Corta:</label>
+            <textarea id="descripcion_corta" name="descripcion_corta" rows="4"></textarea>
+
+            <label for="descripcion_larga">Descripción Larga:</label>
+            <textarea id="descripcion_larga" name="descripcion_larga" rows="6"></textarea>
+
+            <label for="envio_sin_cargo">Envío Sin Cargo:</label>
+            <input type="checkbox" id="envio_sin_cargo" name="envio_sin_cargo">
+
+            <label for="edad_desde">Edad Desde:</label>
+            <input type="number" id="edad_desde" name="edad_desde">
+
+            <label for="edad_hasta">Edad Hasta:</label>
+            <input type="number" id="edad_hasta" name="edad_hasta">
+
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto">
+            <br>
+
             <button type="submit">Guardar Producto</button>
         </form>
     </main>
 
-    <footer class="fixed-footer">
-        <p>Todos los derechos reservados &copy; 2023</p>
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d400137.7249650891!2d-62.556919166007226!3d-38.416609037867055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda31cc3225b49%3A0xd3dbda16e22b2b18!2sEL%20CAZADOR!5e0!3m2!1ses!2sar!4v1695640507536!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="footer-p">
+            <img src="./img/Logo.png" alt="Logo" class="Logo">
+            <p>Armeria El Cazador</p>
+            <p>-Todos los derechos reservados- &copy; 2023</p>
+        </div>
     </footer>
 </body>
+
 </html>
