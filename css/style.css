@@ -58,7 +58,7 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px;
+   
     justify-content: center;
 }
 
@@ -206,7 +206,7 @@ button[type="submit"]:hover {
 /* Estilos para Cards */
 .card {
     width: 100%;
-    height: 400px;
+    height: 500px;
     margin: 0 2% 0 2%;
     padding: 2%;
     background-color: #314652;
@@ -226,6 +226,7 @@ button[type="submit"]:hover {
 
 .btn-comprar {
     width: 50%;
+    margin-top: 30px;
 }
 
 .card-group {
@@ -252,6 +253,14 @@ button[type="submit"]:hover {
     font-weight: bold;
 }
 
+.more-info {
+    display: none;
+}
+
+.card img {
+    background-color: #E37727;
+    border-radius: 30px;
+}
 /* Footer */
 footer {
     width: 100%;
@@ -293,17 +302,16 @@ iframe {
 
 .btn-wsp {
     position: fixed;
-    width: 4%;
-    height: 8%;
+    
     line-height: 60px;
     bottom: 6%;
     right: 2%;
-    background: #25d366;
-    color: #fff;
-    border-radius: 50px;
+    
+    color: #71CF71;
+    
     text-align: center;
-    font-size: 35px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    font-size: 5em;
+    
 
 }
 
@@ -311,4 +319,22 @@ iframe {
     transition: all 300ms ease;
     transform: translateY(-5px);
     transform: scale(1.1);
+}
+
+@media (max-width: 780px) {
+
+    .card-group {
+        flex-direction: column;
+        width: 70%;
+        margin:auto;
+        
+
+    }
+    .card {
+        margin: 50px;
+    }
+    .btn-wsp {
+        width: 10%;
+    
+    }
 }
