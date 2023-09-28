@@ -6,12 +6,20 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-image: url(../img/Background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -26,6 +34,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    border-radius: 50px;
 }
 
 .logo-title {
@@ -49,6 +58,8 @@ header {
 nav {
     background-color: black;
     color: white;
+    border-radius:0 0 50px 50px;
+    
 }
 
 nav,
@@ -71,14 +82,12 @@ nav ul li {
 
 
 a {
+    
     color: #E37727;
     font-size: 2rem;
     font-family: "Cinzel", "Bitter", "EB Garamond";
     font-weight: bold;
 }
-
-
-
 
 h1,
 p {
@@ -90,22 +99,40 @@ p {
     background-color: #314652;
     color: rgb(243, 215, 6);
     padding: 20px;
-    width: 30%;
+    width: 50%;
     border: 3px solid black;
     font-family: "Cinzel", "Bitter", "EB Garamond";
     font-weight: bold;
+    display:flex ;
+    justify-content: center;
+    margin:20px 0 20px 0;
     
 }
 #Title-Contacto {
     background-color: #314652;
     color: rgb(243, 215, 6);
     padding: 20px;
-    width: 45%;
+    width: 50%;
     border: 3px solid black;
     font-family: "Cinzel", "Bitter", "EB Garamond";
     font-weight: bold;
-    
+    margin:20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+    
+    
+
+#Title-Contacto h1, #Title-Contacto P {
+    color: rgb(243, 215, 6);
+  
+}
+#Title-Contacto P {
+    margin-left: 45px;
+}
+
  
 .p-nosotros {
     font-size: .8em;
@@ -134,7 +161,7 @@ p {
 
 /* Formularios */
 form {
-    width: 30%;
+    width: 80%;
     background-color: #314652;
     color: rgb(243, 215, 6);
     padding: 20px;
@@ -144,8 +171,23 @@ form {
 }
 
 #product-form {
-    margin: 0px 0 30px 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
     
+}
+#contact-form {
+    width: 50%;
+    background-color: #314652;
+    color: rgb(243, 215, 6);
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 label {
@@ -173,7 +215,7 @@ input[type="checkbox"] {
 }
 
 input[type="number"] {
-    width: 15%;
+    width: 40%;
     height: 30px;
 }
 
@@ -184,7 +226,7 @@ textarea {
 
 button[type="submit"] {
     background-color: #E37727;
-    width: 50%;
+    
     height: 50px;
     font-size: 1.3rem;
     color: #fff;
@@ -225,8 +267,12 @@ button[type="submit"]:hover {
 }
 
 .btn-comprar {
-    width: 50%;
+    width: 70%;
+    height: 50px;
     margin-top: 30px;
+    background-color: #333;
+    color: white;
+    border-radius: 20px;
 }
 
 .card-group {
@@ -261,6 +307,23 @@ button[type="submit"]:hover {
     background-color: #E37727;
     border-radius: 30px;
 }
+
+/* Nosotros */
+.p-nosotros p, .p-nosotros h1{
+    background-color: #314652;
+    color: rgb(243, 215, 6);
+    padding: 20px;
+    width: 50%;
+    border: 3px solid black;
+    font-family: "Cinzel", "Bitter", "EB Garamond";
+    font-weight: bold;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    margin:20px 25% 20px 25%;
+    
+}
+
 /* Footer */
 footer {
     width: 100%;
@@ -321,20 +384,99 @@ iframe {
     transform: scale(1.1);
 }
 
-@media (max-width: 780px) {
+@media (max-width: 900px) {
 
     .card-group {
         flex-direction: column;
-        width: 70%;
+        width: 60%;
         margin:auto;
         
 
     }
     .card {
-        margin: 50px;
+        margin: 35px;
     }
     .btn-wsp {
         width: 10%;
     
     }
+    .logo-title {
+        font-size: 1em;
+    }
+    a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 680px) {
+    
+    .Logo {
+        width: 20%;
+    }
+    .logo-title {
+        font-size: .8em;
+    }
+    a {
+        font-size: 1rem;
+    }
+    .btn-wsp {
+        right: 6%;
+
+    }
+    #product-form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .alta-button {
+        height: 60px;
+    }
+}
+@media (max-width: 400px) {
+    .Logo {
+        width: 30%;
+        margin-left: 5%;
+    }
+    .logo-title {
+        font-size: .5em;
+        
+    }
+    nav {
+        padding-right:10% ;
+    }
+    iframe {
+        display: none;
+
+    }
+    a {
+        font-size: 1rem;
+    }
+    .btn-wsp {
+        right: 15%;
+
+    }
+    #Title-Alta {
+        width: 80%;
+    }
+    #product-form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .alta-button {
+        height: 60px;
+    }
+    .p-nosotros {
+        width: 100%;
+        
+    }
+    .p-nosotros p, .p-nosotros h1 {
+        width: 40%;
+        margin:0;
+    }
+    
 }
