@@ -249,7 +249,7 @@ button[type="submit"]:hover {
 /* Estilos para Cards */
 .card {
     width: 100%;
-    height: 400px;
+    height: 450px;
     margin: 0 2% 0 2%;
     padding: 2%;
     background-color: #314652;
@@ -271,6 +271,7 @@ button[type="submit"]:hover {
     width: 70%;
     height: 50px;
     margin-top: 30px;
+    margin-bottom: 10px;
     background-color: #333;
     color: white;
     border-radius: 20px;
@@ -384,7 +385,17 @@ iframe {
     transform: translateY(-5px);
     transform: scale(1.1);
 }
-
+@media (max-width:1200px) {
+    .card {
+        margin: 10px;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    .card button {
+        margin-top: 10px;
+        font-size: 1em;
+    }
+}
 @media (max-width: 900px) {
 
     .card-group {
@@ -423,6 +434,10 @@ iframe {
     .btn-wsp {
         right: 6%;
 
+    }
+    .card {
+        width: 130%;
+        height: 500px;
     }
     #product-form {
         width: 80%;
@@ -468,7 +483,7 @@ iframe {
     }
 
     .card {
-        
+        width: 130%;
     }
     iframe {
         display: none;
