@@ -500,7 +500,7 @@ iframe {
 @media (max-width: 450px) {
     body {
         background-image: url(../img/Fondo2.jpg);
-        background-size: auto;
+        background-size: cover;
     }
 
     header,
