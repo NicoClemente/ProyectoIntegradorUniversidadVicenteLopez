@@ -408,8 +408,9 @@ iframe {
         margin-top: 10px;
         font-size: 1em;
     }
+
     .card img {
-        margin-top:10px;
+        margin-top: 10px;
         width: 100%;
     }
 }
@@ -428,6 +429,7 @@ iframe {
         margin: 35px;
         height: 500px;
     }
+
     .card img {
         margin-top: 20px;
         width: 98%;
@@ -473,6 +475,7 @@ iframe {
         width: 130%;
         height: 500px;
     }
+
     .card img {
         margin-top: 20px;
         width: 98%;
@@ -501,6 +504,7 @@ iframe {
     body {
         background-image: url(../img/Fondo2.jpg);
         background-size: cover;
+        max-width: 1280px;
     }
 
     header,
@@ -518,10 +522,10 @@ iframe {
     }
 
     .logo-title {
-        font-size: .65em;
-        flex-direction: column;
-        font-size: .45em;
+    
         
+        font-size: .45em;
+
 
     }
 
@@ -541,6 +545,7 @@ iframe {
     .card {
         width: 130%;
     }
+
     .card img {
         margin-top: 20px;
         width: 98%;
