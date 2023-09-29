@@ -13,6 +13,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
 main {
     width: 100%;
     display: flex;
@@ -20,6 +21,7 @@ main {
     align-items: center;
     justify-content: center;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -59,8 +61,8 @@ header {
 nav {
     background-color: black;
     color: white;
-    border-radius:0 0 50px 50px;
-    
+    border-radius: 0 0 50px 50px;
+
 }
 
 nav,
@@ -70,7 +72,7 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-   
+
     justify-content: center;
 }
 
@@ -83,7 +85,7 @@ nav ul li {
 
 
 a {
-    
+
     color: #E37727;
     font-size: 2rem;
     font-family: "Cinzel", "Bitter", "EB Garamond";
@@ -96,7 +98,8 @@ p {
     font-size: 1.8em;
     color: white;
 }
-#Title-Alta  {
+
+#Title-Alta {
     background-color: #314652;
     color: rgb(243, 215, 6);
     padding: 20px;
@@ -104,11 +107,12 @@ p {
     border: 3px solid black;
     font-family: "Cinzel", "Bitter", "EB Garamond";
     font-weight: bold;
-    display:flex ;
+    display: flex;
     justify-content: center;
-    margin:20px 0 20px 0;
-    
+    margin: 20px 0 20px 0;
+
 }
+
 #Title-Contacto {
     background-color: #314652;
     color: rgb(243, 215, 6);
@@ -117,24 +121,26 @@ p {
     border: 3px solid black;
     font-family: "Cinzel", "Bitter", "EB Garamond";
     font-weight: bold;
-    margin:20px 0 20px 0;
+    margin: 20px 0 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-    
-    
 
-#Title-Contacto h1, #Title-Contacto P {
+
+
+#Title-Contacto h1,
+#Title-Contacto P {
     color: rgb(243, 215, 6);
-  
+
 }
+
 #Title-Contacto P {
     margin-left: 45px;
 }
 
- 
+
 .p-nosotros {
     font-size: .8em;
 }
@@ -178,8 +184,9 @@ form {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    
+
 }
+
 #contact-form {
     width: 50%;
     background-color: #314652;
@@ -197,10 +204,12 @@ label {
     font-weight: bold;
     font-size: 1.5em;
 }
+
 input {
     margin: 0 0 30px 0;
-   
+
 }
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -227,7 +236,7 @@ textarea {
 
 button[type="submit"] {
     background-color: #E37727;
-    
+
     height: 50px;
     font-size: 1.3rem;
     color: #fff;
@@ -270,7 +279,7 @@ button[type="submit"]:hover {
 .btn-comprar {
     width: 70%;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 10px;
     background-color: #333;
     color: white;
@@ -297,7 +306,7 @@ button[type="submit"]:hover {
 }
 
 .card p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -307,11 +316,12 @@ button[type="submit"]:hover {
 
 .card img {
     background-color: #E37727;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 /* Nosotros */
-.p-nosotros p, .p-nosotros h1{
+.p-nosotros p,
+.p-nosotros h1 {
     background-color: #314652;
     color: rgb(243, 215, 6);
     padding: 20px;
@@ -319,11 +329,11 @@ button[type="submit"]:hover {
     border: 3px solid black;
     font-family: "Cinzel", "Bitter", "EB Garamond";
     font-weight: bold;
-    display:flex ;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin:20px 25% 20px 25%;
-    
+    margin: 20px 25% 20px 25%;
+
 }
 
 /* Footer */
@@ -367,16 +377,16 @@ iframe {
 
 .btn-wsp {
     position: fixed;
-    
+
     line-height: 60px;
     bottom: 6%;
     right: 2%;
-    
+
     color: #71CF71;
-    
+
     text-align: center;
     font-size: 5em;
-    
+
 
 }
 
@@ -385,60 +395,75 @@ iframe {
     transform: translateY(-5px);
     transform: scale(1.1);
 }
+
 @media (max-width:1200px) {
     .card {
         margin: 10px;
         padding: 10px;
         flex-wrap: wrap;
     }
+
     .card button {
         margin-top: 10px;
         font-size: 1em;
     }
 }
+
 @media (max-width: 900px) {
 
     .card-group {
         flex-direction: column;
         width: 60%;
-        margin:auto;
-        
+        margin: auto;
+
 
     }
+
     .card {
         margin: 35px;
     }
+
     .btn-wsp {
         width: 10%;
-    
+
     }
+
     .logo-title {
         font-size: .7em;
     }
+
     a {
         font-size: 1.5rem;
     }
 }
 
 @media (max-width: 680px) {
-    
+    body {
+        background-image: url(../img/Fondo2.jpg);
+    }
+
     .Logo {
         width: 20%;
     }
+
     .logo-title {
         font-size: .8em;
     }
+
     a {
         font-size: 1rem;
     }
+
     .btn-wsp {
         right: 6%;
 
     }
+
     .card {
         width: 130%;
         height: 500px;
     }
+
     #product-form {
         width: 80%;
         display: flex;
@@ -446,38 +471,51 @@ iframe {
         justify-content: center;
         align-items: center;
     }
+
     .alta-button {
         height: 60px;
     }
 
-.p-nosotros  {
-    width: 100%;
-    
+    .p-nosotros {
+        width: 100%;
+
+    }
+
 }
-    
-}
+
 @media (max-width: 450px) {
-    header, nav {
+    body {
+        background-image: url(../img/Fondo2.jpg);
+    }
+
+    header,
+    nav {
         border-radius: 0;
     }
+
     body {
         width: 100%
     }
+
     .Logo {
         width: 30%;
         margin-left: 5%;
     }
+
     .logo-title {
         font-size: .5em;
-        
+
     }
+
     .card button {
         margin-top: 10px;
         font-size: 1em;
     }
+
     nav ul {
         padding: 0;
     }
+
     nav a {
         padding: 5px;
     }
@@ -485,23 +523,30 @@ iframe {
     .card {
         width: 130%;
     }
+
     iframe {
         display: none;
 
     }
+
     a {
         font-size: 1rem;
     }
+
     .btn-wsp {
         right: 10%;
 
     }
+
     #Title-Alta {
         width: 80%;
     }
-    #contact-form, #Title-Contacto {
+
+    #contact-form,
+    #Title-Contacto {
         width: 80%;
     }
+
     #product-form {
         width: 80%;
         display: flex;
@@ -509,21 +554,26 @@ iframe {
         justify-content: center;
         align-items: center;
     }
+
     .alta-button {
         height: 60px;
     }
+
     .p-nosotros {
         width: 100%;
-        
+
     }
-    .p-nosotros p, .p-nosotros h1 {
+
+    .p-nosotros p,
+    .p-nosotros h1 {
         width: 80%;
-        margin:10px 5% 10px 5%;
+        margin: 10px 5% 10px 5%;
     }
+
     nav ul li {
         display: inline;
         padding: 2px;
         align-items: center;
     }
-    
+
 }
