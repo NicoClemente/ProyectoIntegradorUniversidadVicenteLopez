@@ -441,13 +441,13 @@ iframe {
 }
     
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     header, nav {
         border-radius: 0;
     }
     body {
         width: 100%
-    };
+    }
     .Logo {
         width: 30%;
         margin-left: 5%;
