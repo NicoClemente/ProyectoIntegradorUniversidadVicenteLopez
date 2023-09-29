@@ -398,6 +398,7 @@ iframe {
 
 @media (max-width:1200px) {
     .card {
+        height: 500px;
         margin: 10px;
         padding: 10px;
         flex-wrap: wrap;
@@ -406,6 +407,10 @@ iframe {
     .card button {
         margin-top: 10px;
         font-size: 1em;
+    }
+    .card img {
+        margin-top:10px;
+        width: 100%;
     }
 }
 
@@ -421,6 +426,11 @@ iframe {
 
     .card {
         margin: 35px;
+        height: 500px;
+    }
+    .card img {
+        margin-top: 20px;
+        width: 98%;
     }
 
     .btn-wsp {
@@ -462,6 +472,10 @@ iframe {
     .card {
         width: 130%;
         height: 500px;
+    }
+    .card img {
+        margin-top: 20px;
+        width: 98%;
     }
 
     #product-form {
@@ -522,6 +536,10 @@ iframe {
 
     .card {
         width: 130%;
+    }
+    .card img {
+        margin-top: 20px;
+        width: 98%;
     }
 
     iframe {
